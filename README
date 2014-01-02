@@ -1,0 +1,85 @@
+README:
+
+Introducing... JMWBot (the alter-ego of johnmark)
+
+Yes, it's true.
+I've been up late hacking on Gluster (and Puppet-Gluster)...
+
+While waiting for my code to compile, patch review (*cough*), and for
+JMW (aka johnmark) to take care of a few todo items, I realized I had
+never written an IRC bot!! Now I never aspired to be the bot master that
+JoeJulian is, but I figured I needed this notch on my hacker belt...
+
+Therefore, I'd like to introduce: JMWBot. (now with 20% more twisted!)
+
+JMWBot is the affectionate alter-ego of johnmark. JMWBot should most
+likely be found hanging out in #gluster, and waiting for johnmark to
+talk. If he does, JMWBot will bug johnmark up to once a day [1] to
+remind him of pending todo items... set by you!
+
+To add a public reminder in #gluster for johnmark:
+JMWBot: @remind bring home some milk
+
+To add a private reminder for johnmark:
+/msg JMWBot @remind bring home some bacon
+
+To list items, you can highlight the bot or /msg the bot with the @list
+command. Only johnmark has the ability to @done <id> items. When your
+item gets closed, you should get a message if you're on Freenode (and
+you haven't changed your nick.)
+
+FAQ:
+
+* Why did you do this?
+This is a hack, it was written for fun!
+
+* Does this really work?
+Yes, I think so. I tested it briefly. It stores your reminders on disk,
+so your data should be safe across (currently manual) rejoin's. I don't
+back up the server often, and all of this is WITHOUT WARRANTY, etc...
+
+* Really?
+Yeah, I think so. Test it out and let me know!
+
+* Can this be done for other people/channels than johnmark/#gluster?
+Yes! Please feel free to run your own bot, code is "open source" [2,3].
+
+* I <3 puppet-gluster [4], where can I send $$$, resources and praise?
+/msg purpleidea in #gluster or @purpleidea on irc! Thanks!
+
+* Yikes! This code is terrible.
+Well it's not that bad. But it was meant as a dirty hack. Feel free to
+send patches or bug reports.
+
+* I didn't find this funny/cool/amusing or even stable.
+Sorry! It was written with good intentions.
+
+* THE BOT HAZ MISS BEHAVEDD AND IS TAKING OVER THE CHANNEL AKA W0RLD.
+I for one, welcome our new IRC overlords. Please /kick it, and let me
+know how it misbehaved. /ban-ing the bot will make it sad :(
+
+NOTES:
+
+The original announcement of JMWBot first apeared here:
+http://gluster.org/pipermail/gluster-users/2013-December/038329.html
+
+After johnmark kept asking, and after I got over a cold, I've now published it:
+https://github.com/purpleidea/jmwbot
+
+Keep in mind that I didn't write this to be extensible, it was meant as a hack!
+If you plan on adding features, you'll want to refactor some of the code first!
+
+
+Well, enjoy and Happy hacking!
+Cheers,
+
+James
+https://ttboj.wordpress.com/
+@purpleidea (irc / twitter)
+
+
+[1] configurable on request
+[2] /msg purpleidea please send me JMWBot, ps: i <3 puppet-gluster
+[3] now available at: https://github.com/purpleidea/jmwbot
+[4] https://github.com/purpleidea/puppet-gluster
+
